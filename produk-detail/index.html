@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title id="page-title">Detail Produk — Peralatan Kantor</title>
+  <meta name="description" id="page-desc" content="Detail produk peralatan kantor untuk instansi dan perusahaan.">
+  <link rel="canonical" id="page-canonical" href="https://peralatankantor.web.id/produk-detail/">
+  <meta property="og:title" id="og-title" content="Detail Produk — Peralatan Kantor">
+  <meta property="og:description" id="og-desc" content="Detail produk peralatan kantor.">
+  <meta property="og:image" id="og-image"
+    content="https://peralatankantor.web.id/assets/img/logo-peralatan-kantor.webp">
+  <meta property="og:url" id="og-url" content="https://peralatankantor.web.id/produk-detail/">
+  <meta property="og:type" content="product">
+  <link href="../assets/img/favicon-peralatan-kantor.webp" rel="icon" type="image/webp">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/css/main.css?v=113" rel="stylesheet">
+  <script id="jsonld-product"
+    type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Produk Peralatan Kantor","brand":{"@type":"Brand","name":"Peralatan Kantor"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","priceCurrency":"IDR","seller":{"@type":"Organization","name":"Peralatan Kantor"}}}</script>
+  <script
+    type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Peralatan Kantor","url":"https://peralatankantor.web.id","logo":"https://peralatankantor.web.id/assets/img/logo-peralatan-kantor.webp","telephone":"+6288989643555"}</script>
+</head>
+
+<body>
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="../index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="../assets/img/logo-peralatan-kantor.webp?v=3" alt="Logo Parenza" class="logo-img"><span
+          class="sitename">Parenza</span>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../index.html">Beranda</a></li>
+          <li><a href="../tentang-kami/index.html">Tentang Kami</a></li>
+          <li class="dropdown"><a href="../produk/index.html" class="active">Produk <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="../produk/alat-tulis-kantor/index.html">Alat Tulis Kantor</a></li>
+              <li><a href="../produk/kursi-kantor/index.html">Kursi Kantor</a></li>
+              <li><a href="../produk/meja-kantor/index.html">Meja Kantor</a></li>
+              <li><a href="../produk/lemari-arsip/index.html">Lemari Arsip</a></li>
+              <li><a href="../produk/videotron/index.html">Videotron</a></li>
+              <li><a href="../produk/perlengkapan-kantor/index.html">Perlengkapan Kantor Lainnya</a></li>
+            </ul>
+          </li>
+          <li><a href="../paket/index.html">Paket</a></li>
+          <li><a href="../blog/index.html">Blog</a></li>
+          <li><a href="../kontak/index.html">Kontak</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 id="hero-title">Detail Produk</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center" id="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="../index.html">Beranda</a></li>
+            <li class="breadcrumb-item"><a href="../produk/index.html">Produk</a></li>
+            <li class="breadcrumb-item active" id="bc-nama">Produk</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Produk Detail Content -->
+    <section class="section" style="padding: 60px 0 80px;">
+      <div class="container">
+
+        <!-- 404 message (hidden by default) -->
+        <div id="not-found" class="text-center py-5" style="display:none;">
+          <i class="bi bi-exclamation-triangle" style="font-size:60px;color:#D4AF37;"></i>
+          <h2 style="color:#7A0C1F;margin-top:16px;">Produk Tidak Ditemukan</h2>
+          <p style="color:#7A6A6E;">Produk yang Anda cari tidak tersedia. Silakan kembali ke halaman produk.</p>
+          <a href="../produk/index.html" class="btn-gold mt-3 d-inline-block">Lihat Semua Produk</a>
+        </div>
+
+        <!-- Product Detail (shown when product found) -->
+        <div id="produk-content" style="display:none;">
+          <div class="row gy-5 align-items-start">
+
+            <!-- Gambar Produk -->
+            <div class="col-lg-5" data-aos="fade-up">
+              <div class="produk-detail-img">
+                <img id="produk-img" src="" alt="" class="img-fluid">
+              </div>
+              <p class="text-center mt-3" style="color:#7A6A6E;font-size:13.5px;">
+                <i class="bi bi-shield-check me-1" style="color:#D4AF37;"></i> Garansi Terpercaya
+                &nbsp;|&nbsp;
+                <i class="bi bi-truck me-1" style="color:#D4AF37;"></i> Pengiriman ke Seluruh Indonesia
+              </p>
+            </div>
+
+            <!-- Info Produk -->
+            <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+
+
+              <!-- Hidden elements to prevent JS errors -->
+              <span id="bc-kategori-link" style="display:none;"></span>
+              <span id="bc-nama-inline" style="display:none;"></span>
+              <span id="produk-nama" style="display:none;"></span>
+
+              <span id="produk-badge" class="badge-kategori mb-3 d-inline-block"></span>
+
+
+
+
+              <p id="produk-deskripsi" style="color:#7A6A6E;font-size:17px;line-height:1.8;margin-bottom:24px;"></p>
+
+              <!-- Spesifikasi -->
+              <h3
+                style="font-family:'Playfair Display',serif;color:#7A0C1F;font-size:18px;font-weight:700;margin-bottom:12px;">
+                Spesifikasi Produk</h3>
+              <table class="spesifikasi-tabel mb-4" id="spesifikasi-table">
+                <tbody id="spesifikasi-body"></tbody>
+              </table>
+
+              <!-- WA Button -->
+              <a id="btn-wa-produk" href="#" target="_blank" rel="noopener" class="btn-pesan-wa d-inline-flex mb-0">
+                <i class="bi bi-whatsapp"></i>
+                Pesan via WhatsApp
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section text-center">
+      <div class="container" data-aos="zoom-in">
+        <h2>Tertarik dengan Produk Ini?</h2>
+        <p>Hubungi kami untuk mendapatkan harga terbaik dan informasi ketersediaan stok.</p>
+        <a id="cta-wa-btn"
+          href="https://wa.me/6288989643555?text=Halo%2C%20saya%20tertarik%20dengan%20produk%20peralatan%20kantor%2C%20mohon%20info%20harga."
+          target="_blank" rel="noopener" class="btn-wa-cta">
+          <i class="bi bi-whatsapp"></i> Chat WhatsApp Sekarang
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="../index.html" class="logo d-flex align-items-center"><img
+              src="../assets/img/logo-peralatan-kantor-gradient.webp?v=1" alt="Logo Parenza" class="logo-img"><span
+              class="sitename">Parenza</span></a>
+          <p class="mt-3">Vendor terpercaya pengadaan ATK, furniture kantor, dan videotron untuk instansi pemerintah,
+            pendidikan, dan perusahaan swasta di Indonesia sejak 2018.</p>
+          <div class="footer-contact mt-3">
+            <p><i class="bi bi-geo-alt me-2"></i>Jl. Soekarno Hatta No. 45, Malang, Jawa Timur 65141</p>
+            <p><i class="bi bi-whatsapp me-2"></i><a href="https://wa.me/6288989643555">0889-8964-3555</a></p>
+            <p><i class="bi bi-envelope me-2"></i>info@peralatankantor.web.id</p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="../tentang-kami/index.html">Tentang Kami</a></li>
+            <li><a href="../produk/index.html">Produk</a></li>
+            <li><a href="../paket/index.html">Paket</a></li>
+            <li><a href="../blog/index.html">Blog</a></li>
+            <li><a href="../kontak/index.html">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Kategori Produk</h4>
+          <ul>
+            <li><a href="../produk/alat-tulis-kantor/index.html">Alat Tulis Kantor</a></li>
+            <li><a href="../produk/kursi-kantor/index.html">Kursi Kantor</a></li>
+            <li><a href="../produk/meja-kantor/index.html">Meja Kantor</a></li>
+            <li><a href="../produk/lemari-arsip/index.html">Lemari Arsip</a></li>
+            <li><a href="../produk/videotron/index.html">Videotron</a></li>
+            <li><a href="../produk/perlengkapan-kantor/index.html">Perlengkapan Lainnya</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Jam Operasional</h4>
+          <ul>
+            <li>Senin – Jumat: 08.00 – 17.00 WIB</li>
+            <li>Sabtu: 08.00 – 13.00 WIB</li>
+          </ul><a
+            href="https://wa.me/6288989643555?text=Halo%2C%20saya%20ingin%20bertanya%20seputar%20produk%20peralatan%20kantor."
+            class="btn-wa-footer mt-3" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> Chat WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span id="footer-year"></span> <strong>Parenza</strong> — peralatankantor.web.id. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+  <div class="wa-float-wrap">
+    <a href="https://wa.me/6288989643555?text=Halo%2C%20saya%20ingin%20bertanya%20seputar%20produk%20Parenza."
+      target="_blank" rel="noopener" aria-label="Chat WhatsApp" class="wa-float-btn">
+      <img src="../assets/img/logo-peralatan-kantor.webp?v=5" alt="Logo Parenza" class="wa-float-logo">
+      <span class="wa-float-badge"><i class="bi bi-whatsapp"></i></span>
+    </a>
+  </div>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+    // ============ DATA PRODUK ============
+    const produkData = {
+      'kursi-kantor-ergonomis-mesh': {
+        nama: 'Kursi Kantor Ergonomis Mesh',
+        kategori: 'Kursi Kantor',
+        kategoriUrl: 'produk-kursi-kantor.html',
+        gambar: 'assets/img/kursi-kantor-ergonomis-mesh.webp',
+        imgAlt: 'Kursi kantor ergonomis sandaran mesh breathable adjustable untuk staff instansi',
+        deskripsi: 'Kursi kantor dengan sandaran mesh breathable dan sandaran tangan yang dapat disesuaikan ketinggiannya. Dirancang untuk memberikan kenyamanan maksimal saat bekerja berjam-jam, sangat cocok untuk penggunaan kerja harian di kantor, ruang staff instansi pemerintah, maupun kampus. Rangka besi kokoh memastikan ketahanan jangka panjang.',
+        spesifikasi: [
+          ['Material', 'Mesh Breathable + Frame Besi'],
+          ['Warna', 'Hitam / Abu-abu'],
+          ['Kapasitas Beban', 'Maksimal 100 kg'],
+          ['Fitur', 'Sandaran tangan adjustable, dudukan empuk'],
+          ['Garansi', '1 Tahun'],
+        ],
+        metaDesc: 'Beli kursi kantor ergonomis mesh sandaran breathable adjustable untuk staff instansi dan perusahaan. Garansi 1 tahun, harga bersaing.',
+      },
+      'kursi-direktur-kulit-hitam': {
+        nama: 'Kursi Direktur Kulit Hitam',
+        kategori: 'Kursi Kantor',
+        kategoriUrl: 'produk-kursi-kantor.html',
+        gambar: 'assets/img/kursi-direktur-kulit-hitam.webp',
+        imgAlt: 'Kursi direktur high-back kulit sintetis hitam premium untuk ruang pimpinan instansi',
+        deskripsi: 'Kursi direktur high-back dengan material kulit sintetis premium berkualitas tinggi. Tampilannya yang elegan dan mewah menjadikannya pilihan ideal untuk ruang pimpinan instansi pemerintah, universitas, maupun perusahaan swasta. Base chrome dengan roda putar yang halus untuk mobilitas di dalam ruangan.',
+        spesifikasi: [
+          ['Material', 'Kulit Sintetis Premium'],
+          ['Warna', 'Hitam'],
+          ['Base', 'Chrome Polished'],
+          ['Tipe', 'High-back dengan sandaran kepala'],
+          ['Garansi', '1 Tahun'],
+        ],
+        metaDesc: 'Kursi direktur high-back kulit sintetis hitam premium untuk ruang pimpinan instansi dan perusahaan. Base chrome, garansi 1 tahun.',
+      },
+      'meja-kantor-minimalis-kayu': {
+        nama: 'Meja Kantor Minimalis Kayu',
+        kategori: 'Meja Kantor',
+        kategoriUrl: 'produk-meja-kantor.html',
+        gambar: 'assets/img/meja-kantor-minimalis-kayu.webp',
+        imgAlt: 'Meja kantor minimalis top kayu engineering kaki besi modern untuk ruang kerja',
+        deskripsi: 'Meja kerja minimalis dengan top kayu engineering berkualitas dan kaki besi finishing matte yang kokoh. Desain clean dan modern cocok untuk ruang kerja kontemporer di kantor maupun instansi. Permukaan kayu dilapisi anti-gores untuk ketahanan jangka panjang.',
+        spesifikasi: [
+          ['Material', 'Kayu Engineering + Besi'],
+          ['Ukuran', '120 x 60 x 75 cm'],
+          ['Finishing', 'Anti-gores'],
+          ['Warna', 'Natural Wood + Hitam Matte'],
+          ['Garansi', '1 Tahun'],
+        ],
+        metaDesc: 'Meja kantor minimalis kayu engineering kaki besi untuk ruang kerja modern instansi. Ukuran 120x60x75cm, garansi 1 tahun.',
+      },
+      'meja-kerja-staff-l-shape': {
+        nama: 'Meja Kerja Staff L-Shape',
+        kategori: 'Meja Kantor',
+        kategoriUrl: 'produk-meja-kantor.html',
+        gambar: 'assets/img/meja-kerja-staff-l-shape.webp',
+        imgAlt: 'Meja kerja staff bentuk L dengan lubang manajemen kabel untuk kantor instansi',
+        deskripsi: 'Meja kerja berbentuk L yang efisien untuk memaksimalkan penggunaan ruang staff. Dilengkapi lubang manajemen kabel yang rapi agar meja tetap bersih dan terorganisir. Cocok untuk ruang kerja open office maupun ruang staff instansi dengan area terbatas.',
+        spesifikasi: [
+          ['Material', 'Particle Board E1'],
+          ['Ukuran', '140 x 140 x 75 cm'],
+          ['Fitur', 'Lubang manajemen kabel'],
+          ['Warna', 'Walnut / Putih'],
+          ['Garansi', '1 Tahun'],
+        ],
+        metaDesc: 'Meja kerja staff L-shape untuk efisiensi ruang kantor dan instansi. Ukuran 140x140cm, lubang kabel, garansi 1 tahun.',
+      },
+      'lemari-arsip-besi-2-pintu': {
+        nama: 'Lemari Arsip Besi 2 Pintu',
+        kategori: 'Lemari Arsip',
+        kategoriUrl: 'produk-lemari-arsip.html',
+        gambar: 'assets/img/lemari-arsip-besi-2-pintu.webp',
+        imgAlt: 'Lemari arsip besi 2 pintu dengan kunci pengaman untuk penyimpanan dokumen instansi',
+        deskripsi: 'Lemari arsip berbahan besi plat berkualitas tinggi dengan sistem kunci pengaman untuk keamanan dokumen penting instansi. Rak internal yang dapat disesuaikan ketinggiannya memudahkan penyimpanan berbagai ukuran dokumen. Sangat cocok untuk kantor pemerintah, dinas, sekolah, maupun perusahaan.',
+        spesifikasi: [
+          ['Material', 'Besi Plat (Steel)'],
+          ['Ukuran', '90 x 40 x 185 cm'],
+          ['Sistem Kunci', 'Kunci pengaman 2 titik'],
+          ['Finishing', 'Cat powder coating anti-karat'],
+          ['Garansi', '1 Tahun'],
+        ],
+        metaDesc: 'Lemari arsip besi 2 pintu kunci pengaman untuk dokumen instansi. Ukuran 90x40x185cm, anti-karat, garansi 1 tahun.',
+      },
+      'lemari-arsip-kayu-4-laci': {
+        nama: 'Lemari Arsip Kayu 4 Laci',
+        kategori: 'Lemari Arsip',
+        kategoriUrl: 'produk-lemari-arsip.html',
+        gambar: 'assets/img/lemari-arsip-kayu-4-laci.webp',
+        imgAlt: 'Lemari arsip kayu 4 laci warna walnut elegan untuk ruang pimpinan instansi',
+        deskripsi: 'Lemari arsip kayu dengan 4 laci yang luas dan mudah ditarik, difinishing dengan warna walnut yang elegan. Cocok untuk ruang kerja pimpinan instansi, ruang direktur, atau area yang membutuhkan tampilan lebih formal dan mewah. Setiap laci dilengkapi rel logam untuk kemudahan membuka dan menutup.',
+        spesifikasi: [
+          ['Material', 'Kayu Solid + MDF'],
+          ['Warna', 'Walnut'],
+          ['Jumlah Laci', '4 Laci'],
+          ['Fitur', 'Rel logam smooth-close'],
+          ['Garansi', '1 Tahun'],
+        ],
+        metaDesc: 'Lemari arsip kayu 4 laci warna walnut elegan untuk ruang pimpinan instansi dan kantor. Garansi 1 tahun.',
+      },
+      'videotron-indoor-p3': {
+        nama: 'Videotron Indoor P3',
+        kategori: 'Videotron',
+        kategoriUrl: 'produk-videotron.html',
+        gambar: 'assets/img/videotron-indoor-p3.webp',
+        imgAlt: 'Videotron indoor pixel pitch P3 brightness 800 nits untuk lobby dan ruang pertemuan instansi',
+        deskripsi: 'Videotron indoor dengan pixel pitch P3 menghasilkan tampilan gambar tajam dan jernih, ideal untuk lobby gedung instansi, ruang pertemuan, aula, maupun area indoor yang memerlukan display informasi berkualitas tinggi. Kecerahan 800 nits memastikan konten tetap terlihat jelas bahkan di ruangan terang.',
+        spesifikasi: [
+          ['Pixel Pitch', 'P3 (3mm)'],
+          ['Brightness', '800 nits'],
+          ['Tipe Instalasi', 'Indoor'],
+          ['Refresh Rate', '≥ 3840 Hz'],
+          ['Garansi', '1 Tahun'],
+        ],
+        metaDesc: 'Videotron indoor pixel pitch P3 brightness 800 nits untuk lobby dan ruang pertemuan instansi. Instalasi profesional, garansi 1 tahun.',
+      },
+      'videotron-outdoor-p6': {
+        nama: 'Videotron Outdoor P6',
+        kategori: 'Videotron',
+        kategoriUrl: 'produk-videotron.html',
+        gambar: 'assets/img/videotron-outdoor-p6.webp',
+        imgAlt: 'Videotron outdoor P6 IP65 waterproof brightness 5500 nits untuk papan informasi gedung instansi',
+        deskripsi: 'Videotron outdoor dengan pixel pitch P6 yang tahan cuaca ekstrem, cocok untuk papan informasi di luar gedung instansi pemerintah, kampus, pusat perbelanjaan, atau gedung perusahaan. Sertifikasi IP65 memastikan perlindungan dari hujan dan debu. Brightness 5500 nits menjamin visibilitas terbaik bahkan di bawah terik matahari.',
+        spesifikasi: [
+          ['Pixel Pitch', 'P6 (6mm)'],
+          ['Brightness', '5500 nits'],
+          ['Perlindungan', 'IP65 Waterproof & Dustproof'],
+          ['Tipe Instalasi', 'Outdoor'],
+          ['Garansi', '1 Tahun'],
+        ],
+        metaDesc: 'Videotron outdoor P6 IP65 waterproof brightness 5500 nits untuk papan informasi gedung instansi. Garansi 1 tahun.',
+      },
+      'alat-tulis-kantor-set-lengkap': {
+        nama: 'Alat Tulis Kantor Set Lengkap',
+        kategori: 'Alat Tulis Kantor',
+        kategoriUrl: 'produk-alat-tulis-kantor.html',
+        gambar: 'assets/img/alat-tulis-kantor-set-lengkap.webp',
+        imgAlt: 'Set alat tulis kantor lengkap 10 item dalam kemasan box untuk satu meja kerja instansi',
+        deskripsi: 'Paket alat tulis kantor lengkap yang dirancang untuk memenuhi kebutuhan operasional harian satu meja kerja di kantor maupun instansi. Berisi 10 item ATK esensial dalam satu kemasan box yang rapi dan mudah didistribusikan ke setiap pegawai. Cocok untuk pengadaan massal instansi pemerintah, sekolah, dan perusahaan.',
+        spesifikasi: [
+          ['Isi', '10 item ATK esensial'],
+          ['Kemasan', 'Box kardus berlogo'],
+          ['Cocok untuk', '1 meja kerja'],
+          ['Pembelian Minimal', 'Hubungi kami untuk info MOQ'],
+        ],
+        metaDesc: 'Paket alat tulis kantor set lengkap 10 item untuk kebutuhan harian instansi dan perusahaan. Harga grosir, pengiriman ke seluruh Indonesia.',
+      },
+      'perlengkapan-kantor-organizer-meja': {
+        nama: 'Perlengkapan Kantor Organizer Meja',
+        kategori: 'Perlengkapan Kantor Lainnya',
+        kategoriUrl: 'produk-perlengkapan-kantor.html',
+        gambar: 'assets/img/perlengkapan-kantor-organizer-meja.webp',
+        imgAlt: 'Organizer meja kantor 3 kompartemen material metal dan kayu untuk kerapian meja kerja',
+        deskripsi: 'Set organizer meja kantor premium dengan 3 kompartemen yang fungsional untuk merapikan dokumen, alat tulis, dan perlengkapan meja kerja. Material kombinasi metal dan kayu memberikan tampilan premium dan ketahanan yang baik. Membantu meningkatkan produktivitas kerja dengan meja yang rapi dan terorganisir.',
+        spesifikasi: [
+          ['Material', 'Metal + Kayu'],
+          ['Kompartemen', '3 bagian'],
+          ['Warna', 'Natural Wood + Hitam'],
+          ['Dimensi', 'Sesuai standar meja kantor'],
+        ],
+        metaDesc: 'Organizer meja kantor 3 kompartemen material metal dan kayu untuk kerapian dan produktivitas kerja instansi.',
+      },
+      'pulpen-set-premium-kantor': {
+        nama: 'Set Pulpen Premium Kantor',
+        kategori: 'Alat Tulis Kantor',
+        kategoriUrl: 'produk-alat-tulis-kantor.html',
+        gambar: 'assets/img/pulpen-set-premium-kantor.webp',
+        imgAlt: 'Set pulpen premium kantor elegan untuk kebutuhan penulisan profesional instansi',
+        deskripsi: 'Set pulpen premium dengan desain elegan dan tinta berkualitas tinggi yang tidak mudah luntur. Sangat cocok digunakan untuk penandatanganan dokumen penting, rapat eksekutif, dan kebutuhan penulisan profesional di lingkungan instansi dan perusahaan. Menghadirkan kesan eksklusif dan nyaman saat digunakan.',
+        spesifikasi: [
+          ['Material', 'Metal Premium'],
+          ['Tinta', 'Hitam, Gel halus'],
+          ['Kemasan', 'Kotak Eksklusif'],
+          ['Garansi', 'Tukar baru bila macet'],
+        ],
+        metaDesc: 'Set pulpen premium kantor desain elegan untuk penandatanganan dokumen instansi. Tinta berkualitas tinggi, anti-luntur.',
+      },
+      'buku-agenda-kantor': {
+        nama: 'Buku Agenda & Notes Kantor',
+        kategori: 'Alat Tulis Kantor',
+        kategoriUrl: 'produk-alat-tulis-kantor.html',
+        gambar: 'assets/img/buku-agenda-kantor.webp',
+        imgAlt: 'Buku agenda dan notes kantor bahan kulit sintetis untuk pencatatan rapat instansi',
+        deskripsi: 'Buku agenda berkualitas dengan cover kulit sintetis yang memberikan perlindungan dan tampilan profesional. Dilengkapi penanda halaman dan slot pena, sangat pas untuk kebutuhan pencatatan jadwal harian, notulensi rapat, dan seminar instansi pemerintah.',
+        spesifikasi: [
+          ['Ukuran', 'A5 (14.8 x 21 cm)'],
+          ['Kertas', 'HVS 80gr, bergaris'],
+          ['Cover', 'Kulit Sintetis (Hardcover)'],
+          ['Warna', 'Hitam / Navy'],
+        ],
+        metaDesc: 'Buku agenda kantor dan notes A5 cover kulit sintetis untuk pencatatan rapat dan seminar instansi. Kertas tebal dan rapi.',
+      },
+      'perlengkapan-meja-stapler-gunting': {
+        nama: 'Set Perlengkapan Meja (Stapler, Gunting, Perforator)',
+        kategori: 'Alat Tulis Kantor',
+        kategoriUrl: 'produk-alat-tulis-kantor.html',
+        gambar: 'assets/img/perlengkapan-meja-stapler-gunting.webp',
+        imgAlt: 'Set perlengkapan meja stapler, gunting, dan perforator untuk administrasi kantor',
+        deskripsi: 'Set perlengkapan meja esensial yang terdiri dari stapler kokoh, gunting stainless steel tajam, dan pembolong kertas (perforator) presisi. Solusi praktis untuk memenuhi kebutuhan kearsipan dan administrasi sehari-hari di meja kerja instansi secara efisien.',
+        spesifikasi: [
+          ['Isi Set', '1 Stapler, 1 Gunting, 1 Perforator'],
+          ['Material Gunting', 'Stainless Steel Anti Karat'],
+          ['Kapasitas Stapler', 'Hingga 30 lembar'],
+          ['Warna', 'Hitam Seragam'],
+        ],
+        metaDesc: 'Set perlengkapan meja kantor: stapler, gunting, perforator berkualitas untuk kebutuhan administrasi harian instansi.',
+      },
+      'map-folder-dokumen-kantor': {
+        nama: 'Map & Folder Dokumen Kantor',
+        kategori: 'Alat Tulis Kantor',
+        kategoriUrl: 'produk-alat-tulis-kantor.html',
+        gambar: 'assets/img/map-folder-dokumen-kantor.webp',
+        imgAlt: 'Map dan folder dokumen kantor bahan plastik tebal untuk penyimpanan arsip instansi',
+        deskripsi: 'Map dan folder dokumen tahan air berbahan plastik tebal untuk melindungi berkas-berkas penting dari kerusakan. Memudahkan pengorganisasian dokumen, arsip, dan laporan kantor agar selalu tersusun rapi, aman, dan mudah dicari saat dibutuhkan oleh instansi.',
+        spesifikasi: [
+          ['Material', 'Plastik PVC Tahan Air'],
+          ['Ukuran', 'Folio / F4'],
+          ['Kapasitas', 'Hingga 50 lembar dokumen'],
+          ['Warna', 'Transparan dengan list warna'],
+        ],
+        metaDesc: 'Map folder dokumen kantor plastik tebal folio tahan air untuk kerapian arsip dan pengorganisasian berkas instansi.',
+      },
+      'kursi-manager-mesh-kulit': {
+        nama: 'Kursi Kantor Manager Mesh & Kulit',
+        kategori: 'Kursi Kantor',
+        kategoriUrl: 'produk-kursi-kantor.html',
+        gambar: 'assets/img/kursi-manager-mesh-kulit.webp',
+        imgAlt: 'Kursi kantor manager ergonomis kombinasi mesh dan kulit sintetis untuk pimpinan',
+        deskripsi: 'Kursi manajerial yang memadukan kenyamanan sirkulasi udara dari bahan mesh dengan kemewahan aksen kulit sintetis. Dilengkapi sistem penyesuaian ergonomis yang menyeluruh, mendukung postur tubuh ideal bagi para manajer dan pimpinan di instansi yang banyak menghabiskan waktu di meja kerja.',
+        spesifikasi: [
+          ['Material', 'Mesh Premium & Kulit Sintetis'],
+          ['Rangka', 'Nylon / Besi Kokoh'],
+          ['Fitur', 'Lumbar support, tilt mechanism'],
+          ['Garansi', '1 Tahun (Roda & Hidrolik)'],
+        ],
+        metaDesc: 'Kursi kantor manager ergonomis kombinasi mesh dan kulit untuk pimpinan instansi. Mendukung postur ideal, garansi 1 tahun.',
+      },
+      'kursi-rapat-meeting': {
+        nama: 'Kursi Rapat Kantor',
+        kategori: 'Kursi Kantor',
+        kategoriUrl: 'produk-kursi-kantor.html',
+        gambar: 'assets/img/kursi-rapat-meeting.webp',
+        imgAlt: 'Kursi rapat kantor minimalis kaki kantilever untuk ruang meeting instansi',
+        deskripsi: 'Kursi rapat kantor dengan desain kantilever (U-shape) modern yang hemat ruang dan tampak rapi. Memberikan kenyamanan duduk yang stabil bagi para peserta saat mengikuti diskusi atau meeting panjang di ruang konferensi instansi dan korporasi.',
+        spesifikasi: [
+          ['Rangka Kaki', 'Besi Krom (Kantilever)'],
+          ['Dudukan', 'Busa High Density'],
+          ['Sandaran', 'Mesh Breathable'],
+          ['Garansi', '1 Tahun (Struktur)'],
+        ],
+        metaDesc: 'Kursi rapat kantor desain kantilever modern untuk ruang meeting instansi. Rangka krom stabil dan dudukan empuk nyaman.',
+      },
+      'kursi-tamu-lounge-kantor': {
+        nama: 'Kursi Tamu / Lounge Kantor',
+        kategori: 'Kursi Kantor',
+        kategoriUrl: 'produk-kursi-kantor.html',
+        gambar: 'assets/img/kursi-tamu-lounge-kantor.webp',
+        imgAlt: 'Kursi tamu lounge kantor empuk elegan untuk area tunggu instansi',
+        deskripsi: 'Kursi tamu lounge dengan bantalan empuk dan lapisan fabrik berkualitas yang menghadirkan suasana hangat dan profesional. Pilihan terbaik untuk ditempatkan di area tunggu, ruang resepsionis, atau ruang direktur instansi demi menyambut tamu kehormatan dengan nyaman.',
+        spesifikasi: [
+          ['Material Dudukan', 'Kain Fabric / Oscar'],
+          ['Rangka', 'Kayu Solid & Besi'],
+          ['Dimensi', 'Standar Lounge Seat'],
+          ['Garansi', '1 Tahun (Struktur)'],
+        ],
+        metaDesc: 'Kursi tamu lounge kantor elegan untuk area resepsionis dan ruang tunggu instansi. Bahan empuk, menyambut tamu dengan profesional.',
+      },
+      'kursi-staff-minimalis-tanpa-lengan': {
+        nama: 'Kursi Staff Minimalis Tanpa Lengan',
+        kategori: 'Kursi Kantor',
+        kategoriUrl: 'produk-kursi-kantor.html',
+        gambar: 'assets/img/kursi-staff-minimalis-tanpa-lengan.webp',
+        imgAlt: 'Kursi staff minimalis tanpa lengan hemat ruang untuk operasional kantor',
+        deskripsi: 'Kursi staff berdesain minimalis tanpa sandaran lengan untuk memberikan kebebasan bergerak secara fleksibel dan kemudahan menyelipkan kursi ke bawah meja. Solusi tepat untuk menghemat ruang di area kerja operasional, lab komputer, atau co-working space instansi.',
+        spesifikasi: [
+          ['Desain', 'Minimalis Tanpa Lengan'],
+          ['Dudukan', 'Busa Lapis Kain Fabric'],
+          ['Kaki', 'Bintang 5 dengan Roda'],
+          ['Hidrolik', 'Adjustable Height'],
+        ],
+        metaDesc: 'Kursi staff minimalis tanpa lengan hemat ruang untuk operasional harian instansi. Bebas bergerak, cocok untuk ruang sempit.',
+      },
+      'meja-rapat-kantor': {
+        nama: 'Meja Rapat Kantor',
+        kategori: 'Meja Kantor',
+        kategoriUrl: 'produk-meja-kantor.html',
+        gambar: 'assets/img/meja-rapat-kantor.webp',
+        imgAlt: 'Meja rapat kantor ukuran besar kapasitas 8 orang untuk ruang meeting instansi',
+        deskripsi: 'Meja rapat berukuran besar yang dirancang khusus untuk memfasilitasi komunikasi tatap muka secara efektif. Permukaannya yang luas sangat ideal untuk menempatkan laptop, proyektor, dan dokumen. Wajib dimiliki untuk melengkapi ruang meeting utama di instansi pemerintah.',
+        spesifikasi: [
+          ['Kapasitas', '6 - 8 Orang'],
+          ['Material Top', 'MDF Lapis HPL Anti Gores'],
+          ['Rangka Kaki', 'Besi Kokoh'],
+          ['Fitur', 'Grommet / Jalur Kabel'],
+          ['Garansi', '1 Tahun'],
+        ],
+        metaDesc: 'Meja rapat kantor luas kapasitas 8 orang untuk ruang meeting utama instansi. Anti gores, dilengkapi jalur kabel rapi.',
+      },
+      'meja-resepsionis-kantor': {
+        nama: 'Meja Resepsionis',
+        kategori: 'Meja Kantor',
+        kategoriUrl: 'produk-meja-kantor.html',
+        gambar: 'assets/img/meja-resepsionis-kantor.webp',
+        imgAlt: 'Meja resepsionis kantor elegan desain modern untuk lobi utama instansi',
+        deskripsi: 'Meja resepsionis dengan desain elegan yang menjadi wajah utama perusahaan atau instansi Anda. Dibuat dengan tingkat privasi yang tepat bagi resepsionis sekaligus menyajikan kesan profesional dan ramah ketika menyambut klien di lobi atau ruang tamu.',
+        spesifikasi: [
+          ['Desain', 'Modern Front Desk'],
+          ['Material', 'Multiplek Lapis HPL'],
+          ['Fasilitas', 'Laci dengan Kunci, Keyboard Tray'],
+          ['Dimensi', 'Tinggi counter 110cm'],
+          ['Garansi', '1 Tahun'],
+        ],
+        metaDesc: 'Meja resepsionis elegan desain modern front desk untuk lobi utama instansi. Memberikan kesan profesional dan fungsional.',
+      },
+      'meja-komputer-workstation': {
+        nama: 'Meja Komputer / Workstation Kantor',
+        kategori: 'Meja Kantor',
+        kategoriUrl: 'produk-meja-kantor.html',
+        gambar: 'assets/img/meja-komputer-workstation.webp',
+        imgAlt: 'Meja komputer workstation dengan partisi untuk ruang kerja staff instansi',
+        deskripsi: 'Meja workstation yang terintegrasi dengan partisi pembatas untuk memberikan privasi dan fokus lebih bagi karyawan. Dilengkapi manajemen kabel internal, meja ini menjamin ruang kerja yang rapi dan terorganisir, ideal untuk call center atau tim IT instansi.',
+        spesifikasi: [
+          ['Tipe', 'Modular Workstation'],
+          ['Material', 'Partisi Kain & Top HPL'],
+          ['Fitur', 'Sistem Manajemen Kabel Terpadu'],
+          ['Konfigurasi', 'Dapat disesuaikan (2, 4, 6 seater)'],
+          ['Garansi', '1 Tahun'],
+        ],
+        metaDesc: 'Meja komputer workstation berpartisi untuk fokus dan privasi staff instansi. Modular, rapi dengan sistem manajemen kabel.',
+      },
+      'meja-kantor-l-shape': {
+        nama: 'Meja Kantor L-Shape',
+        kategori: 'Meja Kantor',
+        kategoriUrl: 'produk-meja-kantor.html',
+        gambar: 'assets/img/meja-kantor-l-shape.webp',
+        imgAlt: 'Meja kantor L-shape sudut luas untuk ruang manajerial dan direktur instansi',
+        deskripsi: 'Meja kantor berbentuk L yang memberikan area kerja ekstra luas untuk multi-tasking yang maksimal. Bagian sisinya berfungsi sempurna sebagai penempatan komputer atau printer, sehingga area utama tetap lega. Pilihan favorit untuk ruang manajerial instansi.',
+        spesifikasi: [
+          ['Bentuk', 'L-Shape (Sudut Kiri/Kanan)'],
+          ['Material', 'Particle Board E1 Standard'],
+          ['Laci', 'Termasuk credenza 3 laci'],
+          ['Finishing', 'Melamine Water-resistant'],
+          ['Garansi', '1 Tahun'],
+        ],
+        metaDesc: 'Meja kantor L-shape area kerja luas untuk ruang manajerial instansi. Lengkap dengan credenza laci dan anti-air.',
+      },
+      'lemari-arsip-kaca-sliding': {
+        nama: 'Lemari Arsip Kaca Sliding Door',
+        kategori: 'Lemari Arsip',
+        kategoriUrl: 'produk-lemari-arsip.html',
+        gambar: 'assets/img/lemari-arsip-kaca-sliding.webp',
+        imgAlt: 'Lemari arsip kaca pintu sliding besi kokoh untuk display dokumen instansi',
+        deskripsi: 'Lemari arsip besi dengan pintu kaca geser (sliding door) yang tidak memakan tempat saat dibuka. Kaca transparan memudahkan pencarian map dokumen dari luar, sementara rangkanya yang terbuat dari plat besi menjamin keawetan arsip penting instansi Anda.',
+        spesifikasi: [
+          ['Material', 'Besi Plat tebal 0.6mm'],
+          ['Pintu', 'Kaca Tempered Sliding'],
+          ['Dimensi', '90 x 40 x 185 cm'],
+          ['Rak', '3-4 Ambalan yang dapat disetel'],
+          ['Garansi', '1 Tahun'],
+        ],
+        metaDesc: 'Lemari arsip pintu kaca sliding hemat tempat untuk dokumen instansi. Material besi plat kokoh dengan rak yang dapat disesuaikan.',
+      },
+      'lemari-arsip-kayu': {
+        nama: 'Lemari Arsip Kayu',
+        kategori: 'Lemari Arsip',
+        kategoriUrl: 'produk-lemari-arsip.html',
+        gambar: 'assets/img/lemari-arsip-kayu.webp',
+        imgAlt: 'Lemari arsip kayu klasik elegan untuk ruang pimpinan dan direktur instansi',
+        deskripsi: 'Lemari arsip berbahan dasar kayu premium yang menampilkan kesan hangat, klasik, dan prestisius. Merupakan furnitur wajib untuk melengkapi estetika ruang pimpinan dan jajaran direktur di instansi maupun perusahaan tanpa mengesampingkan fungsi pengarsipan.',
+        spesifikasi: [
+          ['Material', 'Kayu Olahan Premium & MDF'],
+          ['Finishing', 'Veneer / HPL Motif Kayu'],
+          ['Desain', 'Pintu panel kayu tertutup'],
+          ['Kapasitas', 'Standar Ordner Folio'],
+          ['Garansi', '1 Tahun'],
+        ],
+        metaDesc: 'Lemari arsip kayu klasik elegan untuk estetika ruang pimpinan instansi. Kapasitas luas untuk ordner folio, garansi 1 tahun.',
+      },
+      'lemari-loker-karyawan': {
+        nama: 'Lemari Loker Karyawan',
+        kategori: 'Lemari Arsip',
+        kategoriUrl: 'produk-lemari-arsip.html',
+        gambar: 'assets/img/lemari-loker-karyawan.webp',
+        imgAlt: 'Lemari loker besi karyawan 9 pintu dengan kunci untuk keamanan barang instansi',
+        deskripsi: 'Lemari loker besi multi-pintu yang dirancang kokoh untuk menjaga keamanan barang pribadi karyawan selama jam kerja. Setiap pintu dilengkapi lubang ventilasi dan kunci independen. Solusi ruang penyimpanan aman bagi pabrik, sekolah, rumah sakit, dan instansi besar.',
+        spesifikasi: [
+          ['Material', 'Besi Plat Anti-Karat'],
+          ['Jumlah Pintu', 'Varian 6 / 9 / 12 Pintu'],
+          ['Sistem Kunci', 'Kunci Silinder per Pintu'],
+          ['Fitur', 'Ventilasi Udara'],
+          ['Garansi', '1 Tahun'],
+        ],
+        metaDesc: 'Lemari loker karyawan besi anti-karat dengan kunci aman untuk penyimpanan barang pribadi di instansi dan pabrik.',
+      },
+      'rak-arsip-terbuka': {
+        nama: 'Rak Arsip Terbuka',
+        kategori: 'Lemari Arsip',
+        kategoriUrl: 'produk-lemari-arsip.html',
+        gambar: 'assets/img/rak-arsip-terbuka.webp',
+        imgAlt: 'Rak arsip besi terbuka serbaguna tugas berat untuk gudang penyimpanan dokumen instansi',
+        deskripsi: 'Rak besi penyimpanan terbuka bertipe heavy-duty yang didesain untuk menahan bobot dokumen berskala besar, dus arsip, maupun barang logistik. Sistem tanpa baut (boltless) memudahkan perakitan ulang jika instansi perlu merelokasi ruang arsip atau gudang.',
+        spesifikasi: [
+          ['Kapasitas Beban', 'Hingga 100 kg per ambalan'],
+          ['Material', 'Besi Siku Lubang (Slotted Angle)'],
+          ['Sistem', 'Boltless / Bongkar Pasang Mudah'],
+          ['Dimensi', 'Disesuaikan dengan permintaan'],
+        ],
+        metaDesc: 'Rak arsip terbuka tugas berat untuk gudang dokumen instansi. Mampu menahan beban berat, mudah dirakit, dan efisien.',
+      },
+      'lemari-arsip-besi-tahan-api': {
+        nama: 'Lemari Arsip Besi Tahan Api',
+        kategori: 'Lemari Arsip',
+        kategoriUrl: 'produk-lemari-arsip.html',
+        gambar: 'assets/img/lemari-arsip-besi-tahan-api.webp',
+        imgAlt: 'Lemari arsip besi tahan api fireproof cabinet untuk keamanan dokumen krusial instansi',
+        deskripsi: 'Lemari arsip berlapis insulasi khusus yang memberikan proteksi luar biasa terhadap suhu panas ekstrem dan kobaran api. Sangat direkomendasikan untuk melindungi surat tanah, sertifikat, kontrak, dan berkas krusial lainnya yang tidak ternilai harganya bagi sebuah instansi.',
+        spesifikasi: [
+          ['Proteksi', 'Tahan api (Fireproof Insulation)'],
+          ['Material', 'Besi Baja Ganda'],
+          ['Sistem Kunci', 'Kunci Kombinasi Digital / Manual'],
+          ['Ketahanan', 'Lulus uji standar durasi api'],
+          ['Garansi', '1 Tahun'],
+        ],
+        metaDesc: 'Lemari arsip besi tahan api fireproof cabinet perlindungan maksimal untuk dokumen krusial instansi pemerintah dan swasta.',
+      },
+      'videotron-indoor-p2-resolusi-tinggi': {
+        nama: 'Videotron Indoor P2 Resolusi Tinggi',
+        kategori: 'Videotron',
+        kategoriUrl: 'produk-videotron.html',
+        gambar: 'assets/img/videotron-indoor-p2-resolusi-tinggi.webp',
+        imgAlt: 'Videotron indoor P2 resolusi ultra tinggi LED display untuk ruang kontrol dan aula instansi',
+        deskripsi: 'Videotron LED display untuk pemakaian indoor dengan jarak antar piksel hanya 2mm (P2), memberikan visual ultra detail dari jarak dekat. Pilihan premium untuk kebutuhan command center, ruang rapat eksekutif, dan auditorium instansi yang menuntut kejernihan presentasi maksimal tanpa pecah.',
+        spesifikasi: [
+          ['Pixel Pitch', 'P2 (2mm)'],
+          ['Tingkat Kecerahan', '600 - 800 Nits'],
+          ['Refresh Rate', '≥ 3840 Hz (Flicker-Free)'],
+          ['Modul', 'Indoor High-Resolution LED'],
+          ['Garansi', '1 Tahun (Termasuk Instalasi)'],
+        ],
+        metaDesc: 'Videotron indoor P2 resolusi ultra tinggi untuk command center dan ruang rapat instansi. Visual jernih, instalasi profesional, garansi 1 tahun.',
+      },
+      'videotron-outdoor-p4': {
+        nama: 'Videotron Outdoor P4',
+        kategori: 'Videotron',
+        kategoriUrl: 'produk-videotron.html',
+        gambar: 'assets/img/videotron-outdoor-p4.webp',
+        imgAlt: 'Videotron outdoor P4 tahan cuaca IP65 untuk media informasi digital instansi',
+        deskripsi: 'Videotron outdoor canggih dengan spesifikasi P4 yang memiliki jarak pandang ideal dan resolusi lebih rapat dari tipe P6. Dirancang dengan pelindung IP65 yang tahan cuaca ekstrem, panas, dan badai, sangat optimal sebagai sarana media informasi digital atau baliho elektronik di lingkungan instansi.',
+        spesifikasi: [
+          ['Pixel Pitch', 'P4 (4mm)'],
+          ['Proteksi Alam', 'IP65 Full Weatherproof'],
+          ['Kecerahan', '≥ 5500 Nits (Terlihat Siang Hari)'],
+          ['Aplikasi', 'Luar Ruangan (Outdoor)'],
+          ['Garansi', '1 Tahun (Termasuk Instalasi)'],
+        ],
+        metaDesc: 'Videotron outdoor P4 resolusi tajam tahan cuaca IP65 untuk media informasi dan baliho elektronik instansi pemerintah.',
+      },
+      'videotron-portable-sewa-event': {
+        nama: 'Videotron Portable / Sewaan Event',
+        kategori: 'Videotron',
+        kategoriUrl: 'produk-videotron.html',
+        gambar: 'assets/img/videotron-portable-sewa-event.webp',
+        imgAlt: 'Videotron portable mudah dibongkar pasang untuk panggung event dan pameran instansi',
+        deskripsi: 'Kabinet videotron berbahan die-cast aluminium yang ringan, ramping, dan didesain khusus agar mudah dibongkar-pasang (fast lock system). Produk ideal untuk kebutuhan rental event, pameran, peluncuran produk, atau kegiatan sosialisasi lapangan instansi yang bersifat temporer.',
+        spesifikasi: [
+          ['Material Kabinet', 'Die-cast Aluminium Ringan'],
+          ['Sistem Pemasangan', 'Fast Lock System'],
+          ['Tipe', 'Rental & Portable Screen'],
+          ['Aplikasi', 'Panggung, Pameran, Event Instansi'],
+        ],
+        metaDesc: 'Videotron portable ringan berbahan die-cast aluminium mudah bongkar pasang. Solusi visual untuk event, pameran, dan panggung instansi.',
+      },
+      'videotron-modular-curved': {
+        nama: 'Videotron Modular Melengkung',
+        kategori: 'Videotron',
+        kategoriUrl: 'produk-videotron.html',
+        gambar: 'assets/img/videotron-modular-curved.webp',
+        imgAlt: 'Videotron modular melengkung curved LED screen untuk instalasi artistik instansi',
+        deskripsi: 'Inovasi videotron berbasis modul fleksibel yang dapat dibentuk melengkung (curved) mengikuti pilar gedung atau desain artistik khusus. Solusi display masa depan yang membuat lobi dan arsitektur bangunan instansi Anda tampak jauh lebih modern, mewah, dan berteknologi tinggi.',
+        spesifikasi: [
+          ['Bentuk', 'Fleksibel / Melengkung (Curved)'],
+          ['Derajat Kelengkungan', 'Disesuaikan dengan Modul'],
+          ['Aplikasi', 'Lobi, Pilar Gedung, Studio'],
+          ['Resolusi', 'Tersedia dalam berbagai Pixel Pitch'],
+          ['Garansi', '1 Tahun'],
+        ],
+        metaDesc: 'Videotron modular melengkung curved LED screen untuk instalasi lobi gedung dan studio instansi. Desain artistik, modern, berteknologi tinggi.',
+      },
+      'papan-tulis-whiteboard-kantor': {
+        nama: 'Papan Tulis Whiteboard Kantor',
+        kategori: 'Perlengkapan Kantor Lainnya',
+        kategoriUrl: 'produk-perlengkapan-kantor.html',
+        gambar: 'assets/img/papan-tulis-whiteboard-kantor.webp',
+        imgAlt: 'Papan tulis whiteboard magnetik gantung dan berdiri untuk ruang kelas dan rapat instansi',
+        deskripsi: 'Papan tulis whiteboard dengan permukaan magnetik halus yang mudah dibersihkan tanpa meninggalkan noda tinta. Tersedia dalam varian digantung di dinding maupun menggunakan roda berdiri (stand). Fasilitas vital untuk kelancaran sesi brainstorming dan pengajaran di instansi.',
+        spesifikasi: [
+          ['Permukaan', 'Magnetik Putih Halus'],
+          ['Varian', 'Wall-mounted & Stand dengan Roda'],
+          ['Ukuran', 'Beragam (mis. 120 x 240 cm)'],
+          ['Frame', 'Aluminium Kokoh'],
+        ],
+        metaDesc: 'Papan tulis whiteboard magnetik permukaan halus anti noda untuk ruang rapat dan kelas instansi. Mudah dibersihkan.',
+      },
+      'jam-dinding-kantor': {
+        nama: 'Jam Dinding Kantor',
+        kategori: 'Perlengkapan Kantor Lainnya',
+        kategoriUrl: 'produk-perlengkapan-kantor.html',
+        gambar: 'assets/img/jam-dinding-kantor.webp',
+        imgAlt: 'Jam dinding kantor minimalis sweep movement senyap tanpa detak untuk ruangan instansi',
+        deskripsi: 'Jam dinding berukuran proporsional dengan angka besar yang jelas terbaca dari kejauhan. Menggunakan mesin berteknologi pergerakan halus (sweep movement) yang senyap tanpa bunyi detak mengganggu, menjaga konsentrasi kerja di setiap ruangan instansi.',
+        spesifikasi: [
+          ['Desain', 'Minimalis Modern, Angka Jelas'],
+          ['Mesin', 'Sweep Movement (Senyap)'],
+          ['Diameter', 'Standar Kantor (30 cm - 40 cm)'],
+          ['Daya', 'Baterai AA'],
+        ],
+        metaDesc: 'Jam dinding kantor minimalis sweep movement senyap tanpa detak. Angka jelas, cocok untuk menjaga efisiensi waktu di instansi.',
+      },
+      'tempat-sampah-kantor-set': {
+        nama: 'Set Tempat Sampah Kantor',
+        kategori: 'Perlengkapan Kantor Lainnya',
+        kategoriUrl: 'produk-perlengkapan-kantor.html',
+        gambar: 'assets/img/tempat-sampah-kantor-set.webp',
+        imgAlt: 'Set tempat sampah kantor terpilah organik anorganik bahan stainless untuk kebersihan instansi',
+        deskripsi: 'Tempat sampah terpilah desain modern yang elegan dan tidak merusak estetika ruangan. Sangat mendukung program go-green dan kebersihan di lingkungan instansi, memudahkan proses pemisahan limbah organik, kertas, maupun plastik.',
+        spesifikasi: [
+          ['Material', 'Plastik HDPE / Stainless Steel'],
+          ['Jenis', 'Terpilah (Organik, Anorganik, dll)'],
+          ['Kapasitas', 'Bervariasi (Sesuai Kebutuhan)'],
+          ['Fitur', 'Tutup Pedal / Swing'],
+        ],
+        metaDesc: 'Set tempat sampah kantor pemilah limbah elegan untuk menjaga kebersihan dan mendukung program lingkungan di instansi.',
+      },
+      'rak-sepatu-loker-kecil-kantor': {
+        nama: 'Rak Sepatu / Loker Kecil Kantor',
+        kategori: 'Perlengkapan Kantor Lainnya',
+        kategoriUrl: 'produk-perlengkapan-kantor.html',
+        gambar: 'assets/img/rak-sepatu-loker-kecil-kantor.webp',
+        imgAlt: 'Rak sepatu dan loker kecil kayu besi untuk kerapian sandal dan sepatu karyawan instansi',
+        deskripsi: 'Rak sepatu atau loker bersusun untuk memastikan tidak ada sandal maupun alas kaki karyawan yang berserakan di sekitar meja kerja atau pintu masuk. Desainnya ramping namun sanggup menampung banyak pasang alas kaki di lingkungan kantor.',
+        spesifikasi: [
+          ['Desain', 'Susun Terbuka / Pintu Tertutup'],
+          ['Material', 'Plat Besi / Kayu Partikel'],
+          ['Kapasitas', 'Tergantung jumlah susun'],
+          ['Fungsi', 'Penyimpanan Alas Kaki Karyawan'],
+        ],
+        metaDesc: 'Rak sepatu dan loker alas kaki susun untuk menjaga kerapian area pintu masuk dan lingkungan ruang kerja instansi.',
+      },
+      'karpet-alas-lantai-kantor': {
+        nama: 'Karpet & Alas Lantai Kantor',
+        kategori: 'Perlengkapan Kantor Lainnya',
+        kategoriUrl: 'produk-perlengkapan-kantor.html',
+        gambar: 'assets/img/karpet-alas-lantai-kantor.webp',
+        imgAlt: 'Karpet tile alas lantai kantor tebal meredam suara langkah untuk kenyamanan instansi',
+        deskripsi: 'Karpet lantai bertipe ubin (carpet tile) yang tebal, empuk, dan sangat efektif meredam suara langkah kaki. Selain memperindah interior ruangan, pelapis lantai ini mudah dibersihkan dan diganti per ubin jika terkena noda. Sempurna untuk ruang direksi maupun area staf.',
+        spesifikasi: [
+          ['Tipe', 'Karpet Tile (Kotak)'],
+          ['Dimensi per ubin', '50 x 50 cm'],
+          ['Material', 'Nylon / Polypropylene'],
+          ['Kelebihan', 'Meredam Suara, Mudah Perawatan'],
+        ],
+        metaDesc: 'Karpet tile alas lantai kantor tebal dan peredam suara untuk kenyamanan area kerja instansi. Mudah dipasang dan dibersihkan.',
+      }
+    };
+
+    // ============ RENDER LOGIC ============
+    function initProdukDetail() {
+      const params = new URLSearchParams(window.location.search);
+      const slug = params.get('slug');
+
+      if (!slug || !produkData[slug]) {
+        document.getElementById('not-found').style.display = 'block';
+        return;
+      }
+
+      const p = produkData[slug];
+      const waMsg = encodeURIComponent(`Halo, saya tertarik dengan produk ${p.nama}, mohon info harga dan ketersediaan.`);
+      const waUrl = `https://wa.me/6288989643555?text=${waMsg}`;
+      const pageUrl = `https://peralatankantor.web.id/produk-detail/?slug=${slug}`;
+      const fullTitle = `${p.nama} — Peralatan Kantor`;
+
+      // Update meta
+      document.title = fullTitle;
+      document.getElementById('page-title').textContent = fullTitle;
+      document.getElementById('page-desc').setAttribute('content', p.metaDesc);
+      document.getElementById('og-title').setAttribute('content', fullTitle);
+      document.getElementById('og-desc').setAttribute('content', p.metaDesc);
+      document.getElementById('og-image').setAttribute('content', `https://peralatankantor.web.id/${p.gambar}`);
+      document.getElementById('og-url').setAttribute('content', pageUrl);
+      document.getElementById('page-canonical').setAttribute('href', pageUrl);
+
+      // Update JSON-LD Product
+      const jsonld = {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": p.nama,
+        "description": p.metaDesc,
+        "image": `https://peralatankantor.web.id/${p.gambar}`,
+        "brand": { "@type": "Brand", "name": "Parenza" },
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock",
+          "priceCurrency": "IDR",
+          "seller": { "@type": "Organization", "name": "Parenza", "url": "https://peralatankantor.web.id" }
+        }
+      };
+      document.getElementById('jsonld-product').textContent = JSON.stringify(jsonld);
+
+      // Update BreadcrumbList dynamically
+      const bcJsonld = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Beranda", "item": "https://peralatankantor.web.id/" },
+          { "@type": "ListItem", "position": 2, "name": "Produk", "item": "https://peralatankantor.web.id/produk.html" },
+          { "@type": "ListItem", "position": 3, "name": p.kategori, "item": `https://peralatankantor.web.id/${p.kategoriUrl}` },
+          { "@type": "ListItem", "position": 4, "name": p.nama, "item": pageUrl }
+        ]
+      };
+      const bcScript = document.createElement('script');
+      bcScript.type = 'application/ld+json';
+      bcScript.textContent = JSON.stringify(bcJsonld);
+      document.head.appendChild(bcScript);
+
+      // Render content
+      document.getElementById('hero-title').textContent = p.nama;
+      document.getElementById('bc-nama').textContent = p.nama;
+      document.getElementById('bc-kategori-link').textContent = p.kategori;
+      document.getElementById('bc-kategori-link').href = p.kategoriUrl;
+      document.getElementById('bc-nama-inline').textContent = p.nama;
+      document.getElementById('produk-badge').textContent = p.kategori;
+      document.getElementById('produk-nama').textContent = p.nama;
+      document.getElementById('produk-deskripsi').textContent = p.deskripsi;
+
+      const img = document.getElementById('produk-img');
+      img.src = p.gambar;
+      img.alt = p.imgAlt;
+
+      // Spesifikasi table
+      const tbody = document.getElementById('spesifikasi-body');
+      tbody.innerHTML = '';
+      p.spesifikasi.forEach(([key, val]) => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td>${key}</td><td>${val}</td>`;
+        tbody.appendChild(tr);
+      });
+
+      // WA buttons
+      document.getElementById('btn-wa-produk').href = waUrl;
+      document.getElementById('cta-wa-btn').href = waUrl;
+
+      document.getElementById('produk-content').style.display = 'block';
+    }
+
+    initProdukDetail();
+  </script>
+</body>
+
+</html>
