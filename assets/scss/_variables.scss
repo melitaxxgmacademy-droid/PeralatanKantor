@@ -1,0 +1,59 @@
+// main: main.scss
+/*--------------------------------------------------------------
+# Font & Color Variables — Peralatan Kantor Brand
+# Help: https://bootstrapmade.com/color-system/
+--------------------------------------------------------------*/
+
+/* Fonts */
+:root {
+  --default-font: "Poppins", system-ui, -apple-system, sans-serif;
+  --heading-font: "Playfair Display", Georgia, serif;
+  --nav-font: "Poppins", sans-serif;
+}
+
+/* Global Colors — Maroon × Gold × Cream */
+:root {
+  --background-color: #ffffff;
+  --default-color: #2B1B1F;
+  --heading-color: #7A0C1F;
+  --accent-color: #7A0C1F;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
+
+  /* Brand custom vars */
+  --color-primary: #7A0C1F;
+  --color-primary-dark: #4A0E17;
+  --color-primary-light: #A83248;
+  --color-gold: #D4AF37;
+  --color-cream: #F7EFE6;
+  --color-text-muted: #7A6A6E;
+}
+
+/* Nav Menu Colors */
+:root {
+  --nav-color: #2B1B1F;
+  --nav-hover-color: #7A0C1F;
+  --nav-mobile-background-color: #ffffff;
+  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-color: #2B1B1F;
+  --nav-dropdown-hover-color: #7A0C1F;
+}
+
+/* Color Presets */
+.light-background {
+  --background-color: #F7EFE6;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #4A0E17;
+  --default-color: #f5e6ea;
+  --heading-color: #D4AF37;
+  --surface-color: #5a1a23;
+  --contrast-color: #ffffff;
+}
+
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
