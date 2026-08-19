@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C59348"/>
+      <stop offset="25%" stop-color="#E5C77B"/>
+      <stop offset="50%" stop-color="#FFF2AA"/>
+      <stop offset="75%" stop-color="#E5C77B"/>
+      <stop offset="100%" stop-color="#9C6B27"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Elegant Thin Ring -->
+  <circle cx="60" cy="60" r="54" fill="none" stroke="url(#gold)" stroke-width="1.2" opacity="0.9"/>
+  <!-- Second partial ring for depth -->
+  <path d="M 10,60 A 50,50 0 0,0 110,60" fill="none" stroke="url(#gold)" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Elegant Crown (Top Center) -->
+  <g transform="translate(45, -2) scale(0.3)">
+    <path d="M10,60 Q50,75 90,60 L85,85 L15,85 Z" fill="url(#gold)"/>
+    <path d="M10,55 L0,20 Q15,45 30,55 L50,0 Q70,45 70,55 L100,20 L90,55 Z" fill="url(#gold)"/>
+    <!-- Jewels -->
+    <circle cx="0" cy="15" r="4.5" fill="url(#gold)"/>
+    <circle cx="50" cy="-5" r="5.5" fill="url(#gold)"/>
+    <circle cx="100" cy="15" r="4.5" fill="url(#gold)"/>
+    <circle cx="30" cy="30" r="3" fill="url(#gold)"/>
+    <circle cx="70" cy="30" r="3" fill="url(#gold)"/>
+  </g>
+
+  <!-- Elegant Left Leaves -->
+  <g transform="translate(3, 40) scale(0.7) rotate(-30)">
+    <!-- Branch -->
+    <path d="M 0,50 Q 30,30 60,0" fill="none" stroke="url(#gold)" stroke-width="1.5"/>
+    <!-- Leaves left -->
+    <path d="M 15,42 Q 10,25 0,20 Q 20,25 15,42 Z" fill="url(#gold)"/>
+    <path d="M 35,28 Q 25,10 15,5 Q 35,10 35,28 Z" fill="url(#gold)"/>
+    <path d="M 50,15 Q 40,-5 30,-10 Q 50,-5 50,15 Z" fill="url(#gold)"/>
+    <!-- Leaves right -->
+    <path d="M 10,48 Q 25,45 30,60 Q 20,55 10,48 Z" fill="url(#gold)"/>
+    <path d="M 30,32 Q 45,25 50,40 Q 40,35 30,32 Z" fill="url(#gold)"/>
+  </g>
+
+  <!-- Elegant Flowers (Right Bottom) -->
+  <g transform="translate(70, 70) scale(0.4)">
+    <!-- Branch -->
+    <path d="M 10,80 Q 30,50 70,20" fill="none" stroke="url(#gold)" stroke-width="2"/>
+    
+    <!-- Flower 1 -->
+    <g transform="translate(30, 45) rotate(15)">
+      <g fill="url(#gold)">
+        <ellipse cx="0" cy="-12" rx="4" ry="12" />
+        <ellipse cx="0" cy="-12" rx="4" ry="12" transform="rotate(72)" />
+        <ellipse cx="0" cy="-12" rx="4" ry="12" transform="rotate(144)" />
+        <ellipse cx="0" cy="-12" rx="4" ry="12" transform="rotate(216)" />
+        <ellipse cx="0" cy="-12" rx="4" ry="12" transform="rotate(288)" />
+      </g>
+      <circle cx="0" cy="0" r="4" fill="#FFF2AA"/>
+    </g>
+
+    <!-- Flower 2 -->
+    <g transform="translate(60, 25) scale(0.7) rotate(-30)">
+      <g fill="url(#gold)">
+        <ellipse cx="0" cy="-12" rx="4" ry="12" />
+        <ellipse cx="0" cy="-12" rx="4" ry="12" transform="rotate(72)" />
+        <ellipse cx="0" cy="-12" rx="4" ry="12" transform="rotate(144)" />
+        <ellipse cx="0" cy="-12" rx="4" ry="12" transform="rotate(216)" />
+        <ellipse cx="0" cy="-12" rx="4" ry="12" transform="rotate(288)" />
+      </g>
+      <circle cx="0" cy="0" r="4" fill="#FFF2AA"/>
+    </g>
+    
+    <!-- Flower 3 -->
+    <g transform="translate(15, 75) scale(0.6) rotate(45)">
+      <g fill="url(#gold)">
+        <ellipse cx="0" cy="-12" rx="4" ry="12" />
+        <ellipse cx="0" cy="-12" rx="4" ry="12" transform="rotate(72)" />
+        <ellipse cx="0" cy="-12" rx="4" ry="12" transform="rotate(144)" />
+        <ellipse cx="0" cy="-12" rx="4" ry="12" transform="rotate(216)" />
+        <ellipse cx="0" cy="-12" rx="4" ry="12" transform="rotate(288)" />
+      </g>
+      <circle cx="0" cy="0" r="4" fill="#FFF2AA"/>
+    </g>
+  </g>
+</svg>
