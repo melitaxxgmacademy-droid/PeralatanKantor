@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title id="page-title">Detail Paket — Peralatan Kantor</title>
+  <title id="page-title">Detail Paket ? Peralatan Kantor</title>
   <meta name="description" id="page-desc" content="Detail paket peralatan kantor untuk instansi dan perusahaan.">
   <link rel="canonical" id="page-canonical" href="https://peralatankantor.web.id/paket-detail.html">
-  <meta property="og:title" id="og-title" content="Detail Paket — Peralatan Kantor">
+  <meta property="og:title" id="og-title" content="Detail Paket ? Peralatan Kantor">
   <meta property="og:description" id="og-desc" content="Detail paket peralatan kantor.">
   <meta property="og:image" id="og-image"
     content="https://peralatankantor.web.id/assets/img/logo-peralatan-kantor.webp">
@@ -20,7 +20,7 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/css/main.css?v=113" rel="stylesheet">
+  <link href="assets/css/main.css?v=127" rel="stylesheet">
   <script id="jsonld-service"
     type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Paket Peralatan Kantor","provider":{"@type":"Organization","name":"Peralatan Kantor"}}</script>
   <script
@@ -30,17 +30,18 @@
 <body>
 
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div
-      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/logo-peralatan-kantor.webp?v=3" alt="Logo Parenza" class="logo-img"><span
-          class="sitename">Parenza</span>
+        <img src="assets/img/logo-peralatan-kantor.webp?v=3" alt="Logo Parenza" class="logo-img"><span class="sitename">Parenza</span>
       </a>
+
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Beranda</a></li>
           <li><a href="tentang-kami.html">Tentang Kami</a></li>
-          <li class="dropdown"><a href="produk.html">Produk <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown">
+            <a href="#">Produk <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="produk-alat-tulis-kantor.html">Alat Tulis Kantor</a></li>
               <li><a href="produk-kursi-kantor.html">Kursi Kantor</a></li>
@@ -56,11 +57,7 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-      <a class="btn-getstarted btn-wa-nav"
-        href="https://wa.me/6288989643555?text=Halo%2C%20saya%20ingin%20bertanya%20seputar%20paket%20peralatan%20kantor."
-        target="_blank" rel="noopener">
-        <i class="bi bi-whatsapp me-1"></i> Hubungi via WhatsApp
-      </a>
+
     </div>
   </header>
 
@@ -146,11 +143,11 @@
         <h2>Butuh Paket Khusus Sesuai Anggaran Instansi?</h2>
         <p>Kami bisa menyusun paket custom sesuai kebutuhan dan anggaran instansi Anda. Konsultasi gratis via WhatsApp.
         </p>
-        <a id="cta-wa-btn"
+        <div class="d-flex justify-content-center gap-3 flex-wrap">`n          <a id="cta-wa-btn"
           href="https://wa.me/6288989643555?text=Halo%2C%20saya%20ingin%20konsultasi%20paket%20peralatan%20kantor%20untuk%20instansi%20saya."
           target="_blank" rel="noopener" class="btn-wa-cta">
           <i class="bi bi-whatsapp"></i> Chat WhatsApp Sekarang
-        </a>
+        </a>`n        </div>
       </div>
     </section>
   </main>
@@ -198,8 +195,8 @@
         <div class="col-lg-3 col-md-6 footer-links">
           <h4>Jam Operasional</h4>
           <ul>
-            <li>Senin – Jumat: 08.00 – 17.00 WIB</li>
-            <li>Sabtu: 08.00 – 13.00 WIB</li>
+            <li>Senin ? Jumat: 08.00 ? 17.00 WIB</li>
+            <li>Sabtu: 08.00 ? 13.00 WIB</li>
           </ul><a
             href="https://wa.me/6288989643555?text=Halo%2C%20saya%20ingin%20bertanya%20seputar%20paket%20peralatan%20kantor."
             class="btn-wa-footer mt-3" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> Chat WhatsApp</a>
@@ -207,7 +204,7 @@
       </div>
     </div>
     <div class="container copyright text-center mt-4">
-      <p>© <span id="footer-year"></span> <strong>Parenza</strong> — peralatankantor.web.id. All Rights Reserved.</p>
+      <p>? <span id="footer-year"></span> <strong>Parenza</strong> ? peralatankantor.web.id. All Rights Reserved.</p>
     </div>
   </footer>
 
@@ -294,7 +291,7 @@
       const p = paketData[slug];
       const waUrl = `https://wa.me/6288989643555?text=${p.waText}`;
       const pageUrl = `https://peralatankantor.web.id/paket-detail.html?slug=${slug}`;
-      const fullTitle = `${p.nama} — Peralatan Kantor`;
+      const fullTitle = `${p.nama} ? Peralatan Kantor`;
 
       // Meta updates
       document.title = fullTitle;
