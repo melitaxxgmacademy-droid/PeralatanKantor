@@ -7,7 +7,7 @@ const standardNavLinks = `
           <li><a href="index.html">Beranda</a></li>
           <li><a href="tentang-kami.html">Tentang Kami</a></li>
           <li class="dropdown">
-            <a href="#"><span>Produk</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <a href="produk.html">Produk <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="produk-alat-tulis-kantor.html">Alat Tulis Kantor</a></li>
               <li><a href="produk-kursi-kantor.html">Kursi Kantor</a></li>
@@ -23,7 +23,7 @@ const standardNavLinks = `
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>`;
 
-const standardHeader = `<header id="header" class="header d-flex align-items-center fixed-top">
+const getStandardHeader = (navLinks) => `<header id="header" class="header d-flex align-items-center fixed-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
@@ -31,16 +31,18 @@ const standardHeader = `<header id="header" class="header d-flex align-items-cen
       </a>
 
       <nav id="navmenu" class="navmenu">
-        ${standardNavLinks.trim()}
+${navLinks}
       </nav>
 
     </div>
   </header>`;
 
+
 // Active page mapping: filename -> which link gets "active"
 const activeMap = {
   'index.html': 'index.html',
   'tentang-kami.html': 'tentang-kami.html',
+  'produk.html': 'produk.html',
   'produk-alat-tulis-kantor.html': 'produk-alat-tulis-kantor.html',
   'produk-kursi-kantor.html': 'produk-kursi-kantor.html',
   'produk-meja-kantor.html': 'produk-meja-kantor.html',
@@ -53,7 +55,7 @@ const activeMap = {
   'blog-panduan-memilih-vendor-atk.html': 'blog.html',
   'blog-videotron-indoor-vs-outdoor.html': 'blog.html',
   'kontak.html': 'kontak.html',
-  'produk-detail.html': null,
+  'produk-detail.html': 'produk-detail.html',
 };
 
 const baseDir = 'c:/Peralatan Kantor/iLanding-pro';
@@ -68,13 +70,23 @@ rootFiles.forEach(filename => {
   // Find and replace the header block
   // headerRegex not needed, using replace directly
   
-  // Build the header with active class for this page
+  // Build the nav links with active class for this page
   let activeHref = activeMap[filename] || null;
+  let navLinks = standardNavLinks;
   
-  let header = standardHeader;
   if (activeHref) {
-    header = header.replace(`href="${activeHref}"`, `href="${activeHref}" class="active"`);
+    navLinks = navLinks.replace(`href="${activeHref}"`, `href="${activeHref}" class="active"`);
+    
+    // Highlight parent menu items
+    if (activeHref.startsWith('produk-')) {
+      navLinks = navLinks.replace(`href="produk.html"`, `href="produk.html" class="active"`);
+    }
+    if (activeHref.startsWith('paket-')) {
+      navLinks = navLinks.replace(`href="paket.html"`, `href="paket.html" class="active"`);
+    }
   }
+  
+  let header = getStandardHeader(navLinks.trim());
 
   const newContent = content.replace(/<header[\s\S]*?<\/header>/, header);
   
