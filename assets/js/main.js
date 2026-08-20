@@ -89,11 +89,11 @@
    */
   function aosInit() {
     AOS.init({
-      duration: 500,
-      easing: 'ease-out-cubic',
+      duration: 300,
+      easing: 'ease-out',
       once: true,
       mirror: false,
-      offset: 60,
+      offset: 20,
       delay: 0,
       disable: function() {
         return window.innerWidth < 768;
