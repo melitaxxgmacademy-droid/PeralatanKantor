@@ -1,4 +1,4 @@
-﻿/**
+/**
 * Template Name: iLanding
 * Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
 * Updated: Nov 12 2024 with Bootstrap v5.3.3
@@ -243,7 +243,7 @@ h6 {
   .header .logo {
     flex: 1;
   }
-  
+
   .header .header-container::after {
     content: "";
     flex: 0.7;
@@ -475,6 +475,11 @@ h6 {
 
   .navmenu .active i,
   .navmenu .active:focus i {
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    color: var(--nav-dropdown-color);
+  }
+
+  .navmenu .dropdown-open>i {
     background-color: var(--accent-color);
     color: var(--contrast-color);
     transform: rotate(180deg);
@@ -565,15 +570,17 @@ h6 {
   margin-top: 12px;
   padding-top: 12px;
   padding-left: 4px;
-  border-top: 1px solid rgba(184, 134, 11, 0.25); /* Garis emas tipis sebagai pemisah */
+  border-top: 1px solid rgba(184, 134, 11, 0.25);
+  /* Garis emas tipis sebagai pemisah */
 }
 
 .toc-faq-item a {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #7A0C1F; /* Maroon */
-  font-size: 14px;
+  color: #7A0C1F;
+  /* Maroon */
+  font-size: 16px;
   font-weight: 600;
   text-decoration: none;
   font-family: var(--default-font);
@@ -3201,7 +3208,7 @@ section,
 /* ---- PAGE HERO (inner pages breadcrumb) ---- */
 .page-hero {
   background: linear-gradient(135deg, #7A0C1F 0%, #4A0E17 100%);
-  padding: 150px 0 60px;
+  padding: 160px 0 80px;
   text-align: center;
   color: #fff;
 }
@@ -3209,9 +3216,9 @@ section,
 .page-hero h1 {
   color: #fff;
   font-family: var(--heading-font);
-  font-size: 42px !important;
+  font-size: 52px !important;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -5628,6 +5635,7 @@ html body .about-section-pk .about-text h2 span {
 .toc-list li {
   margin-bottom: 8px;
   padding-left: 4px;
+  font-size: 16px;
 }
 
 .toc-list li:last-child {
@@ -5636,7 +5644,7 @@ html body .about-section-pk .about-text h2 span {
 
 .toc-list a {
   color: #5a3e28;
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: none;
   font-family: var(--default-font);
   transition: color 0.2s;
@@ -5660,7 +5668,8 @@ html body .about-section-pk .about-text h2 span {
   font-family: var(--heading-font);
   font-size: 22px !important;
   font-weight: 700;
-  color: #7A0C1F; /* Maroon */
+  color: #7A0C1F;
+  /* Maroon */
   margin-bottom: 20px;
 }
 
@@ -5688,8 +5697,8 @@ html body .about-section-pk .about-text h2 span {
   background: #fff;
   border: none;
   text-align: left;
-  font-family: var(--heading-font);
-  font-size: 15px;
+  font-family: var(--default-font);
+  font-size: 17px;
   font-weight: 600;
   color: #2d2d2d;
   cursor: pointer;
@@ -6113,14 +6122,20 @@ html body .kategori-card .kat-img img {
 --------------------------------------------------------------*/
 
 /* --- GLOBAL: Cegah horizontal scroll di semua kondisi --- */
-html, body {
+html,
+body {
   overflow-x: hidden;
   max-width: 100%;
 }
-img, video, embed, object {
+
+img,
+video,
+embed,
+object {
   max-width: 100%;
   height: auto;
 }
+
 iframe {
   max-width: 100%;
 }
@@ -6129,7 +6144,8 @@ iframe {
 @media (max-width: 991.98px) {
 
   /* Section padding tidak terlalu lebar */
-  section, .section {
+  section,
+  .section {
     padding: 48px 0;
   }
 
@@ -6145,6 +6161,7 @@ iframe {
     gap: 12px !important;
     width: 100%;
   }
+
   .hero .hero-buttons .btn-primary,
   .hero .hero-buttons .btn-link {
     width: 100%;
@@ -6166,7 +6183,8 @@ iframe {
   }
 
   /* Tabel spesifikasi produk: boleh scroll horizontal */
-  .spec-table-wrapper, .table-responsive {
+  .spec-table-wrapper,
+  .table-responsive {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
@@ -6185,9 +6203,11 @@ iframe {
     max-height: 36px;
     width: auto;
   }
+
   .header .logo span {
     font-size: 18px;
   }
+
   /* Hamburger tap area */
   .mobile-nav-toggle {
     font-size: 26px;
@@ -6198,16 +6218,21 @@ iframe {
     align-items: center;
     justify-content: center;
   }
+
   /* Dropdown mobile via klik (sudah dihandle JS) */
-  .navmenu .dropdown > ul {
-    transition: none; /* faster on mobile */
+  .navmenu .dropdown>ul {
+    transition: none;
+    /* faster on mobile */
   }
+
   /* Mobile nav menu tidak overflow viewport */
   .navmenu ul {
     inset: 56px 10px 10px 10px;
     max-height: calc(100vh - 70px);
   }
-  .navmenu a, .navmenu a:focus {
+
+  .navmenu a,
+  .navmenu a:focus {
     font-size: 15px;
     padding: 12px 16px;
     white-space: normal;
@@ -6217,44 +6242,56 @@ iframe {
   .hero {
     padding-top: 120px;
   }
+
   .hero .hero-content h1 {
     font-size: clamp(1.5rem, 6vw, 2.2rem);
     line-height: 1.25;
   }
+
   .hero .hero-content p {
     font-size: 15px;
   }
+
   .hero .hero-buttons {
     flex-direction: column !important;
-    align-items: stretch !important; /* Kembali ke full-width agar seimbang */
+    align-items: stretch !important;
+    /* Kembali ke full-width agar seimbang */
     gap: 16px !important;
-    padding: 0 20px; /* Jarak aman dari pinggir layar */
+    padding: 0 20px;
+    /* Jarak aman dari pinggir layar */
   }
+
   .hero .hero-buttons .btn-primary,
   .hero .hero-buttons .btn-link {
-    width: 100% !important; /* Lebar penuh mengikuti padding container */
+    width: 100% !important;
+    /* Lebar penuh mengikuti padding container */
     display: inline-flex !important;
     align-items: center;
     justify-content: center;
-    gap: 8px; /* Jarak ikon dan teks */
+    gap: 8px;
+    /* Jarak ikon dan teks */
     padding: 14px 20px;
     min-height: 48px;
     margin: 0 !important;
     border-radius: 50px;
   }
+
   .hero .hero-buttons .btn-link i {
     margin: 0 !important;
   }
+
   .hero .hero-image img {
     max-width: 90%;
     margin: 0 auto;
     display: block;
   }
+
   .hero .customers-badge {
     position: static;
     margin: 16px auto 0;
     max-width: 100%;
   }
+
   .hero .stat-item {
     padding: 12px 16px;
     gap: 12px;
@@ -6289,6 +6326,7 @@ iframe {
     aspect-ratio: 1 / 1;
     overflow: hidden;
   }
+
   .product-card .product-img-wrap img,
   .paket-card .paket-img-wrap img {
     width: 100%;
@@ -6301,8 +6339,10 @@ iframe {
   .paket-detail-section .detail-img-wrap {
     margin-bottom: 24px;
   }
+
   /* WhatsApp CTA button full-width */
-  .btn-wa-detail, a[href*="wa.me"] {
+  .btn-wa-detail,
+  a[href*="wa.me"] {
     width: 100%;
     text-align: center;
   }
@@ -6313,7 +6353,9 @@ iframe {
     -webkit-overflow-scrolling: touch;
     border-radius: 6px;
   }
-  .produk-spec-table, .spec-table {
+
+  .produk-spec-table,
+  .spec-table {
     min-width: 360px;
   }
 
@@ -6323,6 +6365,7 @@ iframe {
     line-height: 1.4;
     white-space: normal;
   }
+
   .faq-item .faq-toggle {
     min-width: 32px;
     min-height: 32px;
@@ -6339,11 +6382,14 @@ iframe {
   .blog-card .blog-img {
     aspect-ratio: 16 / 9;
   }
+
   .blog-card .blog-body p,
   .blog-card .blog-meta {
     font-size: 14px;
   }
-  .blog-card h3, .blog-card h4 {
+
+  .blog-card h3,
+  .blog-card h4 {
     font-size: 16px;
   }
 
@@ -6351,6 +6397,7 @@ iframe {
   .section-title h2 {
     font-size: 24px;
   }
+
   .section-title {
     padding-bottom: 36px;
   }
@@ -6359,15 +6406,19 @@ iframe {
   .footer .footer-top [class*="col-"] {
     margin-bottom: 28px;
   }
+
   .footer .footer-about .logo span {
     font-size: 20px;
   }
+
   .footer .social-links {
     margin-bottom: 16px;
   }
+
   .footer .copyright .row {
     text-align: center;
   }
+
   .footer .copyright .col-md-6:last-child {
     text-align: center !important;
     margin-top: 8px;
@@ -6377,6 +6428,7 @@ iframe {
   .page-title h1 {
     font-size: 28px;
   }
+
   .page-title {
     padding: 110px 0 48px 0;
   }
@@ -6385,6 +6437,7 @@ iframe {
   .cta-section h2 {
     font-size: 22px;
   }
+
   .cta-section .btn-wa-cta {
     width: 100%;
     justify-content: center;
@@ -6398,6 +6451,7 @@ iframe {
   .hero {
     padding-top: 100px;
   }
+
   .hero .hero-content h1 {
     font-size: clamp(1.3rem, 7vw, 1.8rem);
   }
@@ -6407,6 +6461,7 @@ iframe {
     margin-top: 2rem;
     padding: 0;
   }
+
   .hero .stat-item {
     padding: 12px;
     flex-direction: column;
@@ -6421,19 +6476,23 @@ iframe {
     display: block;
     overflow: hidden;
   }
+
   .produk-spec-table thead,
   table.spec-table thead,
   .table-spesifikasi thead {
-    display: none; /* Sembunyikan header kolom */
+    display: none;
+    /* Sembunyikan header kolom */
   }
+
   .produk-spec-table tbody tr,
   table.spec-table tbody tr,
   .table-spesifikasi tbody tr {
     display: block;
-    border-bottom: 1px solid rgba(0,0,0,0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     padding: 8px 0;
     margin-bottom: 0;
   }
+
   .produk-spec-table td,
   table.spec-table td,
   .table-spesifikasi td {
@@ -6443,6 +6502,7 @@ iframe {
     font-size: 14px;
     text-align: left !important;
   }
+
   .produk-spec-table td:first-child,
   table.spec-table td:first-child,
   .table-spesifikasi td:first-child {
@@ -6453,6 +6513,7 @@ iframe {
     letter-spacing: 0.3px;
     padding-bottom: 0;
   }
+
   .produk-spec-table td:last-child,
   table.spec-table td:last-child,
   .table-spesifikasi td:last-child {
@@ -6467,15 +6528,18 @@ iframe {
   }
 
   /* Section padding lebih kecil */
-  section, .section {
+  section,
+  .section {
     padding: 36px 0;
   }
+
   .page-title {
     padding: 90px 0 36px 0;
   }
 
   /* CTA WhatsApp: font lebih kecil */
-  .btn-wa-cta, .btn-wa-detail {
+  .btn-wa-cta,
+  .btn-wa-detail {
     font-size: 14px;
     padding: 12px 16px;
   }
@@ -6488,6 +6552,7 @@ iframe {
 
 /* --- MOBILE BESAR / TABLET KECIL (481px – 767px): 2 kolom grid --- */
 @media (min-width: 481px) and (max-width: 767px) {
+
   .row.g-4.justify-content-center .col-md-6,
   .row.g-4 .col-md-6 {
     flex: 0 0 50%;
@@ -6510,43 +6575,51 @@ html body .paket-card p {
   font-size: 15.5px !important;
   line-height: 1.7 !important;
 }
+
 /* Center and stretch buttons on mobile */
 @media (max-width: 767px) {
+
   .hero-buttons,
   .about-text .d-flex {
     flex-direction: column;
     align-items: stretch;
   }
+
   .hero-buttons a,
   .about-text .d-flex a {
     width: 100% !important;
   }
 }
+
 /* MOBILE ADJUSTMENTS: CTA, Footer, Buttons */
 @media (max-width: 767px) {
+
   /* 1. CTA Title bigger */
   .cta-section h2 {
     font-size: 28px !important;
   }
-  
+
   /* 2. CTA Button smaller, matching hero button size */
   .cta-section .btn-wa-cta {
     padding: 12px 28px !important;
     font-size: 15px !important;
   }
-  
+
   /* 3. Center all footer columns */
-  .footer .row > div {
+  .footer .row>div {
     text-align: center;
   }
-  .footer .row > div ul li {
+
+  .footer .row>div ul li {
     justify-content: center;
   }
+
   .footer .social-links {
     justify-content: center;
   }
+
   /* Leave the logo as it is (left aligned) by not adding justify-content: center to it */
-  
+
   /* 4. Footer button matching hero button size */
   .btn-wa-footer {
     padding: 12px 28px !important;
@@ -6555,27 +6628,57 @@ html body .paket-card p {
     width: 100%;
   }
 }
+
 /* --- ENLARGE TEXT ON MOBILE --- */
 @media (max-width: 767px) {
-  body, p, li, .footer-links ul a, .footer-contact p, .footer-about p, 
-  .about-text p, .blog-details p, .blog-details li, .kontak-text p, 
-  .product-card-desc, .paket-desc, .badge-kategori, .navmenu a, .faq-item .faq-content p {
+
+  body,
+  p,
+  li,
+  .footer-links ul a,
+  .footer-contact p,
+  .footer-about p,
+  .about-text p,
+  .blog-details p,
+  .blog-details li,
+  .kontak-text p,
+  .product-card-desc,
+  .paket-desc,
+  .badge-kategori,
+  .navmenu a,
+  .faq-item .faq-content p {
     font-size: 16px !important;
     line-height: 1.6 !important;
   }
-  
+
   /* Make sure headings aren't smaller than text */
-  h1 { font-size: 26px !important; }
-  h2:not(.cta-section h2) { font-size: 24px !important; }
-  h3 { font-size: 20px !important; }
-  h4 { font-size: 18px !important; }
-  .footer h4 { font-size: 22px !important; }
-  
+  h1 {
+    font-size: 26px !important;
+  }
+
+  h2:not(.cta-section h2) {
+    font-size: 24px !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+  }
+
+  h4 {
+    font-size: 18px !important;
+  }
+
+  .footer h4 {
+    font-size: 22px !important;
+  }
+
   /* Some specific elements that might need to stay slightly smaller but still readable */
-  .badge-kategori, .product-card .price, small {
+  .badge-kategori,
+  .product-card .price,
+  small {
     font-size: 14px !important;
   }
-  
+
   .copyright p {
     font-size: 11px !important;
     padding: 0 45px 0 10px !important;
@@ -6589,6 +6692,7 @@ html body .paket-card p {
     flex-shrink: 0 !important;
     min-width: 64px !important;
   }
+
   .wa-float-logo {
     width: 46px !important;
     height: 46px !important;
@@ -6596,4 +6700,41 @@ html body .paket-card p {
     min-width: 46px !important;
     object-fit: cover !important;
   }
+}
+
+/* ===== BACA JUGA INLINE ===== */
+.baca-juga-inline {
+  display: block;
+  background: rgba(122, 12, 31, 0.04);
+  border-left: 3px solid #7A0C1F;
+  border-radius: 0 4px 4px 0;
+  padding: 8px 12px;
+  margin: 16px 0;
+  text-decoration: none;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.baca-juga-inline:hover {
+  background: rgba(122, 12, 31, 0.08);
+  text-decoration: none;
+}
+
+.baca-juga-inline .baca-juga-label {
+  color: #7A0C1F;
+  font-weight: 700;
+  font-size: 10px !important;
+  margin-right: 5px;
+}
+
+.baca-juga-inline .baca-juga-text {
+  color: #2B1B1F;
+  font-size: 10px !important;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Override inside article-content */
+.article-content .baca-juga-inline .baca-juga-label,
+.article-content .baca-juga-inline .baca-juga-text {
+  font-size: 10px !important;
 }

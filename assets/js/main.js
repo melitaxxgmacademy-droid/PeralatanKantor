@@ -40,23 +40,26 @@
    * Hide mobile nav on same-page/hash links
    */
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
-    navmenu.addEventListener('click', () => {
+    navmenu.addEventListener('click', function(e) {
+      // Do not close if this is a dropdown toggle
+      if (this.parentNode.classList.contains('dropdown')) return;
+
       if (document.querySelector('.mobile-nav-active')) {
         mobileNavToogle();
       }
     });
-
   });
 
   /**
-   * Toggle mobile nav dropdowns
+   * Toggle mobile nav dropdowns — only via arrow icon
    */
-  document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-    navmenu.addEventListener('click', function(e) {
+  document.querySelectorAll('.navmenu .toggle-dropdown').forEach(icon => {
+    icon.addEventListener('click', function(e) {
       e.preventDefault();
-      this.parentNode.classList.toggle('active');
-      this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
       e.stopImmediatePropagation();
+      const parentA = this.closest('a');
+      parentA.classList.toggle('dropdown-open');
+      parentA.nextElementSibling.classList.toggle('dropdown-active');
     });
   });
 
